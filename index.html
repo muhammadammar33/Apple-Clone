@@ -2,126 +2,244 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li id="logo"><img src="./images/apple.png" height="15px" alt="Apple Logo"></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Mac</a></li>
-                <li><a href="#">iPad</a></li>
-                <li><a href="#">iPhone</a></li>
-                <li><a href="#">Watch</a></li>
-                <li><a href="#">Vision</a></li>
-                <li><a href="#">AirPods</a></li>
-                <li><a href="#">TV & Home</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href=""><img src="./images/search.png" height="15px" alt=""></a></li>
-                <li><a href=""><img src="./images/bag.png" height="15px" alt=""></a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light " aria-label="Fourth navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brandnav-link active nav-item" aria-current="page" href="#"><img src="./images/apple.png" height="30px" alt="Apple Logo"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a href="#" class="nav-link">Store</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Mac</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">iPad</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">iPhone</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Watch</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Vision</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">AirPods</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">TV & Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Entertainment</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/search.png" alt="search" height="20px"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/bag.png" alt="bag" height="20px"></a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
     <div class="top">
         <p>We’re donating $10 to the National Park Foundation for every purchase <br> made at Apple using Apple Pay through 8/27.<sup>1</sup><a href="" class="shop"> Shop now ></a></p>
     </div>
+    <!-- main -->
 
-    <!-- Main Content -->
-    <main>
-        <!-- Feature Section -->
-        <div class="giftCard">
-            <a href="" class="shop">
-                <h1 id="black">Save on Mac or iPad <br> for college.</h1>
-                <p id="black" class="size">Plus get a gift card up to $150.<sup>2</sup></p>
-                <a href="" class="shop"> Shop now ></a>
-                <img src="./images/backtoschool.png" alt="">
-            </a>
+    <!-- Package -->
+    <div class="px-4 pt-5 my-5 text-center border-bottom patch">
+    <h1 class="display-6 fw-bold">Save on Mac or iPad <br> for college.</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Plus get a gift card up to $150.<sup>2</sup></p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Shop now ></button>
         </div>
-
-        <div class="macBook">
-            <a href="" class="shop">
-                <h1 id="black">MacBook Air 15<sup>"</sup></h1>
-                <p id="black" class="size">Impressively big. Impossibly thin.</p>
-                <a href="" class="shop"> Learn more ></a><a href="" class="shop">Buy ></a>
-                <img src="./images/MacBook.png" alt="">
-            </a>
+    </div>
+    <div style="max-height: 50vh;">
+        <div class="container px-5">
+        <img src="./images/backtoschool.png" class="img-fluid rounded-3 mb-4" alt="MacBook">
         </div>
+    </div>
+    </div>
 
-        <div class="iPhone">
-            <a href="" class="shop">
-                <h1 id="black">iPhone 14</h1>
-                <p id="black" class="size">WonderFull.</p>
-                <a href="" class="shop"> Learn more ></a> <a href="" class="shop">Buy ></a>
-                <img src="./images/iphone.png" alt="">
-            </a>
+    <!-- MacBook -->
+    <div class="px-4 pt-5 my-5 text-center border-bottom patch">
+    <h1 class="display-4 fw-bold text-body-emphasis">MacBook Air 15<sup>"</sup></h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Impressively big. Impossibly thin.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+        <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Buy ></button>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+        <img src="./images/MacBook.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
         </div>
+    </div>
+    </div>
+    </div>
 
-        <section class="grid">
-            <div class="iPhone14Pro">
-                <a href="" class="shop">
-                    <h1 id="white">iPhone 14 Pro</h1>
-                    <p id="white" class="size">Pro. Beyond.</p>
-                    <a href="" class="shop"> Learn more ></a> <a href="" class="shop">Buy ></a>
-                    <img src="./images/pro.png" alt="">
-                </a>
-            </div>
-            <div class="iPad">
-                <a href="" class="shop">
-                    <h1 id="white">iPad Pro</h1>
-                    <p id="white" class="size">Superchrged by <img src="./images/M2.jpeg" height="25px" alt=""> </p>
-                    <a href="" class="shop"> Learn more ></a> <a href="" class="shop">Buy ></a>
-                    <img src="./images/iPad.png" width="620px" alt="">
-                </a>
-            </div>
-            <div class="watch">
-                <a href="" class="shop">
-                    <h1 id="white"><img src="./images/white apple.png" height="28px" alt="">WATCH</h1>
-                    <p class="series">SERIES 8</p>
-                    <p id="white" class="size">A healthy leap ahead.</p>
-                    <a href="" class="shop"> Learn more ></a> <a href="" class="shop">Buy ></a>
-                    <img src="./images/Watch.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href=""><img src="./images/vision.png" height="620px" alt=""></a>
-            </div>
-            <div class="trade">
-                <a href="" class="shop">
-                    <h1 id="black"><img src="./images/apple.png" height="28px" alt="">Trade In</h1>
-                    <p id="black" class="size">Upgrade and save. It's that easy.</p>
-                    <a href="" class="shop">See what your device worth ></a> 
-                    <img src="./images/Trade.png" alt="">
-                </a>
-            </div>
-            <div class="card">
-                <a href="" class="shop">
-                    <h1 id="black"><img src="./images/apple.png" height="28px" alt="">Card</h1>
-                    <p id="black" class="size">Get up to 3% Daily Cash Back <br>with every purchase.</p>
-                    <a href="" class="shop"> Learn more ></a> <a href="" class="shop">Apply now ></a>
-                    <img src="./images/card.png" alt="">
-                </a>
-            </div>
-        </section>
-            <!-- Repeat similar structure for other features -->
+    <!-- iPhone -->
+    <div class="px-4 pt-5 my-5 text-center border-bottom patch">
+    <h1 class="display-4 fw-bold text-body-emphasis">iPhone 14</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">WonderFull.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+        <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Buy ></button>
+    </div>
+    <div style="max-height: 50vh;">
+        <div class="container px-5">
+        <img src="./images/iphone.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+    </div>
+    </div>
+    </div>
 
-        <!-- Video Section -->
-        <!-- <section id="video">
-            <video controls>
-                <source src="apple-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section> -->
-    </main>
+    <!-- Grid -->
+    <div class="row mb-3 text-center">
+        <div class="col-md-6 themed-grid-col">
+            <!-- iPhone 14 Pro-->
+            <div class="px-4 pt-5 text-center border-bottom patch">
+                <h1 class="display-4 fw-bold text-body-emphasis">iPhone 14 Pro</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Pro. Beyond.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Buy ></button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                    <img src="./images/pro.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+            <!-- iPad-->
+            <div class="px-4 pt-5 text-center border-bottom patch">
+                <h1 class="display-4 fw-bold text-body-emphasis">iPad Pro</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Superchrged by <img src="./images/M2.jpeg" height="25px" alt=""> </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Buy ></button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                    <img src="./images/iPad.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+            <!-- Watch -->
+            <div class="mt-5 text-center border-bottom patch">
+                <h1 class="display-4 fw-bold text-body-emphasis">WATCH</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4 series">SERIES 8</p>
+                    <p class="lead mb-4">A healthy leap ahead.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Buy ></button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                    <img src="./images/Watch.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+            <!-- Watch -->
+            <div class="mt-5 text-center border-bottom patch">
+                <div class="container px-5">
+                <img src="./images/vision.png" class="img-fluid" alt="Example image" height="620" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+            <!-- Trade -->
+            <div class="mt-5 text-center border-bottom patch">
+                <h1 class="display-4 fw-bold text-body-emphasis"><img src="./images/apple.png" height="28px" alt="">Trade In</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Upgrade and save. It's that easy.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">See what your device worth ></button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                    <img src="./images/Trade.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 themed-grid-col">
+            <!-- Trade -->
+            <div class="mt-5 text-center border-bottom patch">
+                <h1 class="display-4 fw-bold text-body-emphasis"><img src="./images/apple.png" height="28px" alt="">Card</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Get up to 3% Daily Cash Back <br>with every purchase.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Learn more ></button>
+                    <button type="button" class="btn btn-link btn-md px-4 me-sm-3 shop">Apply now ></button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                    <img src="./images/card.png" class="img-fluid mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        <p class="footer">Copyright &copy; 2023 Apple Inc. All rights reserved.</p>
+    <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+        <img src="./images/apple.png" height="80px" alt="">
+        <p class="text-body-secondary">© 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+    </div>
+
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+    </div>
+
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+    </div>
     </footer>
+</div>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
